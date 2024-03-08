@@ -1,3 +1,5 @@
+# Brownian motion hand tracking demo
+
 ```
 pip install -r requirements.txt
 shiny run --launch-browser app.py
