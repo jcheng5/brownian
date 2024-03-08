@@ -1,0 +1,26 @@
+.shinymediapipe-debug-preview {
+  position: fixed;
+  --width: 320px;
+  --height: 240px;
+  --peek: 24px;
+  width: var(--width);
+  height: var(--height);
+  right: calc(var(--width) * -1 + var(--peek));
+  bottom: calc(var(--height) * -1 + var(--peek));
+  transition: opacity 0.5s, right 0.5s, bottom 0.5s;
+  opacity: 0.2;
+  box-sizing: content-box;
+  cursor: pointer;
+}
+
+.shinymediapipe-debug-preview:hover,
+.shinymediapipe-debug-preview.pinned {
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+  border: 3px solid transparent;
+}
+
+.shinymediapipe-debug-preview.pinned {
+  border-color: #00AA00;
+}
